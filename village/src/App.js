@@ -32,10 +32,17 @@ class App extends Component {
   }
 
   //setState to trigger re-render comming from smurfForm
-  addSmurf = newSmurf => {
-    console.log(newSmurf);
+  addSmurf = data => {
+    console.log(data);
     this.setState(() => ({
-      smurfs: newSmurf
+      smurfs: data
+    }));
+  };
+
+  deleteSmurf = data => {
+    console.log(data);
+    this.setState(() => ({
+      smurfs: data
     }));
   };
 
@@ -56,7 +63,13 @@ class App extends Component {
         <Route
           exact
           path="/"
-          render={props => <Smurfs {...props} smurfs={this.state.smurfs} />}
+          render={props => (
+            <Smurfs
+              {...props}
+              deleteSmurf={this.deleteSmurf}
+              smurfs={this.state.smurfs}
+            />
+          )}
         />
 
         {/* Route for the form to create new smurfs */}

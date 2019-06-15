@@ -19,6 +19,8 @@ class SmurfForm extends Component {
       .then(res => {
         // Pass  data to state on the app.js to trigger re-render
         this.props.addSmurf(res.data);
+        // Push to history to take user back to home after submiting a new smurf
+        this.props.history.push("/");
       })
       .catch(err => {
         console.log(err);
