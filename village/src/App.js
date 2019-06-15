@@ -29,10 +29,17 @@ class App extends Component {
       });
   }
 
+  //setState to trigger re-render comming from smurfForm
+  addSmurf = newSmurf => {
+    this.setState(() => ({
+      smurfs: newSmurf
+    }));
+  };
+
   render() {
     return (
       <div className="App">
-        <SmurfForm />
+        <SmurfForm addSmurf={this.addSmurf} />
         <Smurfs smurfs={this.state.smurfs} />
       </div>
     );
