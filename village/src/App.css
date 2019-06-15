@@ -18,3 +18,11 @@ nav a {
   background-color: blue;
   color: white
 }
+
+.Smurf {
+  margin: 10px auto;
+  border: 1px solid gray;
+  background-color: #F8F8F8;
+  width: 200px;
+  height: 150px;
+}
