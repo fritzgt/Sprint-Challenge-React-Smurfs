@@ -1,3 +1,15 @@
 .App {
   text-align: center;
 }
+
+nav {
+  display: flex;
+
+}
+
+nav a {
+  margin: 10px;
+  text-decoration: none;
+  color: green;
+
+}

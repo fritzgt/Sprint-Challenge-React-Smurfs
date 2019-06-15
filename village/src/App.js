@@ -42,6 +42,12 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        {/* Navbar */}
+        <nav>
+          <Link to="/">Home</Link>
+          <Link to="/smurf-form">Add new Smurf</Link>
+        </nav>
+
         {/* Route for the list of smurfs */}
         <Route
           exact
