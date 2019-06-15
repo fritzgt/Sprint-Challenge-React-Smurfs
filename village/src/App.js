@@ -31,6 +31,7 @@ class App extends Component {
 
   //setState to trigger re-render comming from smurfForm
   addSmurf = newSmurf => {
+    console.log(newSmurf);
     this.setState(() => ({
       smurfs: newSmurf
     }));
