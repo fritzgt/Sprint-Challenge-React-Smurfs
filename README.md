@@ -133,7 +133,7 @@ Add a Router to this application by using React Router.
 
 - [x] If your delete worked, you'll get a list of the smurfs back.
 
-- [ ] Example:
+- [x] Example:
 
 ```js
 // output: `A list of all the smurfs in the Smurf DB will be returned`
